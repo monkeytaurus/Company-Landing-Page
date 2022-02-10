@@ -13,14 +13,25 @@
 }
 
 body{
-    min-height: 100vh;
     background-image: url('/images/bgImgMobile.jpg');
-    background-repeat: no repeat;
-    background-position: center;
+    /* background-position: center; */
+    background-size: cover;
     font-family: 'Open Sans', 'Poppins', 'sans-serif'; 
     font-weight: 400;
+    background-repeat: no-repeat;
 
 }
+
+.hero-img{ 
+    margin-bottom: 20px; 
+}
+
+.container{ 
+    height: 100vh; 
+    max-width: 100%;
+}
+
+
 
 h2{ 
     font-family: 'Poppins', 'Open Sans', 'sans-serif';
@@ -34,30 +45,26 @@ h2{
     justify-content: center;
     /* text-align: center; */
     align-items: center;
+    height: 100%;
 }
 
-.icon-header{ 
-    display: inline-flex; 
-    white-space: nowrap;
-    /* margin-right: 180px; */
-    margin: 15px 0 15px  25px; 
-    width: 100%;
-}
-.icon-header img{ 
-    max-height: 20px ;
-    margin-right: 5px;
-}
+
+
 .content{
-    text-align: center;
-  
-    margin: 0 10px; 
+    text-align:center;
+    margin-right: 10px;
 }
 
 p{ 
-    margin-bottom: 10px;
     color: white;
-    padding: 0 35px;
+    padding: 10px 20px;
+    line-height: 24px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
+
 .start-btn{ 
     text-decoration: none;
     color: var(--violet); 
@@ -65,19 +72,43 @@ p{
     border: 1px solid white; 
     border-radius: 20px;
     background-color: white;
-    font-weight: 400; 
     padding: 6px 40px; 
 }
 
 
 @media screen and (min-width: 768px){ 
 
+        body{ 
+            background: url('/images/bgImgDesktop.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+     
 
     .wrapper{
         display: flex;
         flex-direction: row;
-        width: 100%; 
-        align-items: center; 
+        /* width: 100%;  */
+        height: 100%; /*increase the height to 100% of the parent div and bottom space will not be there. */
+        gap: 40px;
     }
+
+    .content{ 
+        max-width: 660px; 
+    }
+
+    .hero-img{ 
+        margin-left: 40px;
+        margin-bottom: 0; 
+    }
+   
+    .start-btn{ 
+        margin-top: 20px; 
+        font-size: 14px; 
+        padding: 10px 40px; 
+    }
+
   
 }
