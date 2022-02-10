@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{ 
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('/images/bgImgMobile.jpg');
+    background-repeat: no repeat;
+    background-position: center;
+    font-family: 'Open Sans', 'Poppins', 'sans-serif'; 
+    font-weight: 400;
+
+}
+
+h2{ 
+    font-family: 'Poppins', 'Open Sans', 'sans-serif';
+    color: white; 
+}
+
+
+.wrapper{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.icon-header{ 
+    display: inline-flex; 
+    white-space: nowrap;
+    /* margin-right: 180px; */
+    margin: 15px 0 15px  25px; 
+    width: 100%;
+}
+.icon-header img{ 
+    max-height: 20px ;
+    margin-right: 5px;
+}
+.content{
+    text-align: center;
+  
+    margin: 0 10px; 
+}
+
+p{ 
+    margin-bottom: 10px;
+    color: white;
+    padding: 0 35px;
+}
+.start-btn{ 
+    text-decoration: none;
+    color: var(--violet); 
+    font-size: 12px; 
+    border: 1px solid white; 
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 400; 
+    padding: 6px 40px; 
+}
+
+
+@media screen and (min-width: 768px){ 
+
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        align-items: center; 
+    }
+  
+}
