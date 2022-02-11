@@ -13,7 +13,7 @@
 }
 
 body{
-    background-image: url('/images/bgImgMobile.jpg');
+    background-image: url('/images/Mobile\ -\ 1080x1920.png');
     /* background-position: center; */
     background-size: cover;
     font-family: 'Open Sans', 'Poppins', 'sans-serif'; 
@@ -32,11 +32,24 @@ body{
 }
 
 
-
 h2{ 
     font-family: 'Poppins', 'Open Sans', 'sans-serif';
     color: white; 
 }
+
+h4{ 
+    color: white; 
+}
+
+.left-flex{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+
 
 
 .wrapper{ 
@@ -79,7 +92,7 @@ p{
 @media screen and (min-width: 768px){ 
 
         body{ 
-            background: url('/images/bgImgDesktop.jpg');
+            background: url('/images/2560x1080.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
