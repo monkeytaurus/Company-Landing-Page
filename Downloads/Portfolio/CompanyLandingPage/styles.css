@@ -22,43 +22,35 @@ body{
 
 }
 
+.icon-header{ 
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-start;
+    margin-bottom: 20px; 
+}
+
+.icon-header img{ 
+    height: 50px;
+}
+
 .hero-img{ 
     margin-bottom: 20px; 
+  
 }
 
 .container{ 
     height: 100vh; 
-    max-width: 100%;
+    max-width: 1320px;
+    margin: 0 auto; 
 }
 
 
 h2{ 
     font-family: 'Poppins', 'Open Sans', 'sans-serif';
     color: white; 
+    font-size: 26px; 
 }
 
-.company-header{ 
-    height: 100%; 
-    width:100%; 
-    flex-direction: row; 
-    justify-content: flex-start;
-}
-
-
-
-
-h4{ 
-    color: white;
-    margin:10px 0 0 20px; 
-
-}
-
-.left-flex{ 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-   
-}
 
 
 .wrapper{ 
@@ -67,9 +59,9 @@ h4{
     justify-content: center;
     /* text-align: center; */
     align-items: center;
-    height: 100%;
-}
+    margin: 20px; 
 
+}
 
 
 .content{
@@ -84,7 +76,7 @@ p{
     text-align: center;
     word-break: break-all;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .start-btn{ 
@@ -111,23 +103,30 @@ p{
 
     .wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         /* width: 100%;  */
-        height: 100%; /*increase the height to 100% of the parent div and bottom space will not be there. */
+        height: 100%; 
+        justify-content: space-evenly;
+        margin: 0 2rem; 
+        padding-top: 50px; 
+        padding-bottom: 50px;
     }
 
     .content{ 
         max-width: 660px; 
     }
+    .main{ 
+        display: flex; 
+        align-items: center;
+        gap: 40px; 
+    }
 
-    .hero-img{ 
-        /* margin-left: 40px;
-        margin-bottom: 0;  */
+    .hero-img img{ 
         width: 100%; 
+       vertical-align: center;
     }
    
     .start-btn{ 
-        margin-top: 20px; 
         font-size: 14px; 
         padding: 10px 40px; 
     }
