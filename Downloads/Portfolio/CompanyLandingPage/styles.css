@@ -23,13 +23,12 @@ body{
 }
 
 .icon-header{ 
-    display: flex; 
     justify-items: flex-start; 
     width: 100%; 
 }
 
 .icon-header img{ 
-    height: 40px;
+    height: 30px;
     vertical-align: sub;
 }
 
@@ -48,7 +47,7 @@ body{
 h1{ 
     font-family: 'Poppins', 'Open Sans', 'sans-serif';
     color: white; 
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h2{ 
@@ -56,6 +55,7 @@ h2{
     line-height: 1.5;
     color: white; 
     font-size: 26px; 
+    margin-bottom: 15px;
 }
 
 
@@ -64,18 +64,18 @@ h2{
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* text-align: center; */
     align-items: center;
-    margin: 20px; 
+    margin: 0 2rem; 
     height: 100%; 
-
-
+    padding-top: 40px; 
+    padding-bottom: 40px; 
 }
 
 .content{
     text-align:center;
-    margin-right: 10px;
+  
 }
 
 p{ 
@@ -108,7 +108,9 @@ p{
             background-repeat: no-repeat;
         }
 
-     
+     .container{ 
+         height: 100vh; 
+     }
 
     .wrapper{
         display: flex;
@@ -126,8 +128,9 @@ p{
     }
     .main{ 
         display: flex; 
+        flex-direction: column;
         align-items: center;
-        gap: 40px; 
+        gap: 30px; 
         width:100%; 
         /* height:100%;  */
     }
@@ -164,5 +167,17 @@ p{
     .hero-img img{ 
         width: 400px;
     }
+    .main{ 
+        flex-direction: row; 
+    }
    
+    .content{ 
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px){ 
+    h2{ 
+        font-size: 36px; 
+    }
 }
